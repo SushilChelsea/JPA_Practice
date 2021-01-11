@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="JPAExample2">
+		<class>com.thejavageek.compoundPrimaryKey.EmbeddedEmployeeId</class>
+		<class>com.thejavageek.entities.Employee</class>
+		<class>com.thejavageek.joinCols.Employee1</class>
+		<class>com.thejavageek.joinCols.EmployeeId</class>
+		<class>com.thejavageek.joinCols.Phone</class>
+		<class>com.thejavageek.orderColumn.Employee2</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/myDB" />
+			<property name="javax.persistence.jdbc.user" value="sushil" />
+			<property name="javax.persistence.jdbc.password" value="sushil" />
+		</properties>
+	</persistence-unit>
+</persistence>
