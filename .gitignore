@@ -2,4 +2,5 @@
 !/.gitignore
 .metadata
 .recommenders
-/RemoteSystemTempFiles/*
+*/bin/*
+*/RemoteSystemTempFiles/*
